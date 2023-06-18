@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 const ActorCard = ({ name, image, gender, country, birthday, deathday }) => {
   return (
     <div>

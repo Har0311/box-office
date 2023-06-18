@@ -10,6 +10,8 @@ const usePersistedState = (initialState, sessionStorageKey) => {
   useEffect(() => {
     sessionStorage.setItem(sessionStorageKey, JSON.stringify(state));
   }, [state, sessionStorageKey]);
+
+  return [state, setState];
 };
 
 export const useSearchStr = () => {
