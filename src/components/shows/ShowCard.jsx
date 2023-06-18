@@ -36,7 +36,7 @@ const ShowCard = ({ name, image, id, summary, onStarMeClick, isStarred }) => {
       <p>{summaryStripped}</p>
 
       <ActionSection>
-        <Link href={`/show/${id}`} target="_blank" rel="noreferrer">
+        <Link to={`/show/${id}`} target="_blank" rel="noreferrer">
           Read more
         </Link>
         <StarBtn ref={starBtnRef} type="button" onClick={handleStarClick}>
